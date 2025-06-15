@@ -1,0 +1,38 @@
+We are going to use deep learning methods for evidence retrieval 
+Most important is Transformer based neural network
+
+--> RNN is recurrent neural network it has an ability to understand meaning from sentences and then accordingly predict next word. But this NN is good when 
+sentences are short or linkages are small . Otherwise its memory doesn't works properly and this faces vanishing
+ gradient issues
+Note:- Always remember word embeddings needs to be done from simple text to vectors before applying the same in any NN
+Different types of models in NLP for which RNN is used
+Vector sequence model-> input is fixed size vector and result is of variable size(eg image captioning)
+Sequence Vector Model-> input is of variable size and result is fixed (eg sentimental analysis)
+Sequence to Sequence Model-> input is variable and output is also variable eg machine translation, time series
+
+
+--> LSTM (Long short term memory) -> modified version of RNN, feature of skipping intermediary steps for longer connections, good until 100 words only, slow in training 
+(Issues faced above methods -- (slow training, vanishing gradient))
+
+Solution of vanishing gradient is Introduction to attention mechanism
+Attention mechanism(Concept)-> Change mode of operation of RNN (Encoder and Decoder) 
+add more content in the context vector (passing total hidden states)
+giving score to hidden states and generate new score which highlights importance wrt others
+also at <end> hiddenstatevector(h4) + context are generated (in RNN only conetext is recycle)
+in attention mechanism h4+context is used in FFN(feed forward)-> result into final output word at particular position
+
+
+Transformer Neural Network(Based on attention mechanism)
+
+Unlike Seq2Seq model (input is series) here input entire sentence is passed in input(parallelisation)
+Process contains(Encoder+Decoder)-> final output
+Step1 -> Word embedding using standard algorithms (
+
+
+
+
+
+
+
+
+

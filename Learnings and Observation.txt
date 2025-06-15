@@ -1,0 +1,23 @@
+Lets get started with automatic fact checker using NLP
+Step 1 Load the data into google colab (done)
+Step 2 Preprocess the data 
+This involves 
+lowercase of letters where Case of the word doesn't have much importance lowercasing will improve search and model training 
+stemming (getting root word) from the given word and helps in searching in some corpus . Commonly used algorithm for this would be porter algorithm for English words
+ lemmatisation -> proper way using rule based algorithm for mapping word to its root word add some extra overhead but very important in some domains
+Stopwordremoval-> involves removal of words which have very less importance with respect to text basically not played much significance in pos tagging
+Normalisation-> This is basically used for extracting overall meaning of words written in different way maybe spelling shortcuts or social media style of text like b4
+Noise removal -> most important step in whole above steps (removing special characters,number removal, html formatting) (kind of first or second step to do )
+Text enrichment/Augmentation -> this is used to generate text from original text basically this will provide help in training model by providing different variety from original text 
+
+
+-------- Method for deep learning ---------------------
+Word embedding to enrich meaning of words, phrases and may be sentences . Phrase extraction tasks
+
+Steps to be followed in above goal
+Loading data from hugging face
+Creating index with wiki_pages data
+Mapping between claim and referring sentence in claims dataset using index created above
+Implement Sentence transformer for generating word embedding 
+
+
